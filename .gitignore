@@ -1,0 +1,43 @@
+# 환경 변수 파일
+.env
+.env.*
+!.env.example
+!.env.docker.example
+**/.env
+**/.env.local
+**/.env.prod
+**/.env.production
+
+
+# 키/인증서
+*.pem
+*.key
+*.p12
+*.jks
+
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*$py.class
+
+# Virtual env
+.venv/
+venv/
+
+# 작업환경
+.vscode/
+**/.env*
+.env*
+
+
+# pytest/mypy cache
+.pytest_cache/
+.mypy_cache/
+
+# IDE
+.idea/
+
+# csv 파일
+app/data/*.csv
