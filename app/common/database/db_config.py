@@ -13,7 +13,7 @@ engine = create_async_engine(
 )
 
 
-# 세션 생성 함수
+# 디비 세션 생성 함수
 async_session = async_sessionmaker(
     bind=engine,            # 어느 DB 사용할지 설정
     class_=AsyncSession,    # 비동기 사용
