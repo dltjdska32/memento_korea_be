@@ -1,0 +1,11 @@
+#헤더 관련 상수
+AUTHORIZATION_HEADER = "Authorization"
+AUTHORIZATION_HEADER_TYPE = "Bearer "
+
+#JWT 관련 상수
+JWT_CLAIM_ROLE = "role"
+JWT_CLAIM_USERNAME = "username"
+JWT_CLAIM_EMAIL = "email"
+JWT_CLAIM_EXP = "exp"
+REFRESH_TOKEN_COOKIE_KEY = "refreshToken"
+TOKEN_PREFIX = "RT:"

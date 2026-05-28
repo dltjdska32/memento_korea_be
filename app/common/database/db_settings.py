@@ -17,4 +17,4 @@ class DBSettings(BaseSettings):
             f"@{self.db_host}:{self.db_port}/{self.db_name}"
         )
 
-settings = DBSettings()
+db_settings = DBSettings()

@@ -1,7 +1,6 @@
 from sqlalchemy.ext.asyncio import create_async_engine, async_sessionmaker, AsyncSession
 
-from app.common.database import db_settings
-
+from app.common.database.db_settings import db_settings
 # db 설정 및 sql아키미 설정
 
 # 포스트그리 비동기 연결풀 생성

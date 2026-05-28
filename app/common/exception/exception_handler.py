@@ -39,13 +39,6 @@ def register_exception_handlers(app: FastAPI) -> None:
         logger.error("DOMAIN_ETC_ERR: %s", str(exc))
         return error_response(500, "DOMAIN_ETC_ERR", str(exc))
 
-    # 4. 권한 예외 (커스텀으로 하나 더 만들면 됨)
-    @app.exception_handler(StarletteHTTPException)
-    async def handle_http_exception(request: Request, exc: StarletteHTTPException):
-        if exc.status_code == 401:
-            logger.error("AUTH_ERR: %s", exc.detail)
-            return error_response(401, "AUTH_ERR", "접근 권한 오류 발생")
-
     # 5. 요청 검증 예외 (@Valid, @ModelAttribute 대응)
     @app.exception_handler(RequestValidationError)
     async def handle_validation_exception(request: Request, exc: RequestValidationError):
